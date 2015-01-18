@@ -10,14 +10,12 @@ Router = require('react-router')
 Route = Router.Route
 
 # Require route components.
-HelloWorld = require './hello_world'
-StyleGuide = require './styleguide'
-App = require './app'
+HelloWorld = require './views/hello_world'
+App = require './views/app'
 
 routes = (
   <Route handler={App}>
     <Route name="hello" handler={HelloWorld} path="/" />
-    <Route name="styleguide" handler={StyleGuide} path="/styleguide" />
   </Route>
 )
 Router.run(routes, (Handler) ->
