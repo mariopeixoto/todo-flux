@@ -1,13 +1,5 @@
 'use strict';
 
-generateActionName = (namespace, action) ->
-  "#{namespace}.#{action}"
-
-generateListenables = (namespace, actions) ->
-  actions.map (action) ->
-    generateActionName(namespace, action)
-
-
 createActions = (namespace, Dispatcher, actions) ->
   Actions = () ->
     @
