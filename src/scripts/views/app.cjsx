@@ -1,3 +1,5 @@
+'use strict';
+
 Link = require('react-router').Link
 RouteHandler = require('react-router').RouteHandler
 
@@ -6,6 +8,6 @@ module.exports = React.createClass
   displayName: 'App'
   render: ->
     <div>
-      <header><Link to="hello">Hello</Link></header>
+      <header><Link to="hello">Hello</Link><Link to="chat">Chat</Link></header>
       <RouteHandler/>
     </div>
